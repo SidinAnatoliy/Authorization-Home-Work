@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
     @IBAction func showAlertButtonTapped(_ sender: UIButton) {
         switch sender {
         case ForgotUserNameButton:
-            showAlert(withTitle: "Oops!", andMassage: "Your name is user")
+            showAlert(withTitle: "Oops!", andMassage: "Your name is User")
         case ForgotPasswordButton:
             showAlert(withTitle: "Oops!", andMassage: "Your password is Password")
         default:
