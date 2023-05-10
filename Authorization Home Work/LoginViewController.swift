@@ -39,8 +39,8 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let successfulAuthorizationVC = segue.destination as? WelcomeViewController else { return }
-        successfulAuthorizationVC.welcomeLabelUser = UserLoginTF.text
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.welcomeLabelUser = UserLoginTF.text
     }
     
     @IBAction func showAlertButtonTapped(_ sender: UIButton) {
