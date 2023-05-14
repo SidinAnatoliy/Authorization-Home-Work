@@ -10,12 +10,11 @@ import UIKit
 final class WelcomeViewController: UIViewController {
 
     @IBOutlet var WelcomeLabel: UILabel!
-    var welcomeLabelUser: String!
+    var user = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        WelcomeLabel.text = welcomeLabelUser
-        WelcomeLabel.text = " Welcome, \(welcomeLabelUser ?? "")!"
+        WelcomeLabel.text = " Welcome, \(user)!"
     }
     
     @IBAction func LogOutButtonTapped() {
